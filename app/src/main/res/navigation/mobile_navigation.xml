@@ -80,6 +80,12 @@
     <!-- TODO END STEP 4 -->
 
     <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.android.codelabs.navigation.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
+
+    <fragment
         android:id="@+id/deeplink_dest"
         android:name="com.example.android.codelabs.navigation.DeepLinkFragment"
         android:label="@string/deeplink"
@@ -88,15 +94,7 @@
         <argument
             android:name="myarg"
             android:defaultValue="Android!"/>
-        <!-- TODO STEP 11.1 - Add a deep link to www.example.com/{myarg}/ -->
 
-        <!--<deepLink app:uri="www.example.com/{myarg}" />-->
-
-        <!-- TODO END STEP 11.1 -->
+        <deepLink app:uri="www.example.com/{myarg}" />
     </fragment>
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.android.codelabs.navigation.SettingsFragment"
-        android:label="settings_fragment"
-        tools:layout="@layout/settings_fragment" />
 </navigation>
